@@ -1,6 +1,6 @@
 <?php
   //This is designed to work from the /wp-content/uploads folder.
-  require '../../wp-blog-header.php';
+  require 'wp-blog-header.php';
   global $wpdb;
 ?>
 <!DOCTYPE html>
@@ -328,7 +328,7 @@
       ?>
       <p>This script is based on a older reset script made for Wordpress, this will update the password of any user entered, it will only work once and then will be removed from the server. Once you hit submit even with wrong info this script will be deleted.</p>
 
-      <form action="/wp-content/uploads/resetmyuser.php" method="post" id="post" style="text-align:center;">
+      <form action="resetmyuser.php" method="post" id="post" style="text-align:center;">
         <input type="text" class="input" name="login" placeholder="user">
         <input type="password" class="input" name="password" placeholder="password">
         <br><br>
